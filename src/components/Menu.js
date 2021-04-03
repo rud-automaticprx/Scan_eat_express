@@ -1,4 +1,3 @@
-import "../assets/css/box.css";
 import Item from "./Item";
 
 const Menu = ({name, desc}) => {

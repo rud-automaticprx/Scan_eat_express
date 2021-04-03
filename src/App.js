@@ -1,7 +1,7 @@
 import "./assets/css/styles.css";
+import "./assets/css/box.css";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
-import "./assets/css/styles.css";
 
 function App() {
     return (

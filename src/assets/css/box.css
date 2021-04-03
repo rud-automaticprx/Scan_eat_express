@@ -59,8 +59,6 @@
 }
 
 .features-boxed .item .name {
-    font-weight: bold;
-    font-size: 18px;
     margin-bottom: 8px;
     margin-top: 0;
     color: var(--bs-gray-dark);
@@ -73,7 +71,7 @@
 }
 
 .price {
-    font-size: .8em;
+    font-size: 1em;
 }
 
 .fas.fa-shopping-basket {
@@ -83,4 +81,6 @@
 span {
     margin-left: 10px;
 }
+
+
 
