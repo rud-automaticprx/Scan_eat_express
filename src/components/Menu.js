@@ -1,6 +1,6 @@
 import Item from "./Item";
 
-const Menu = ({name, desc, menu}) => {
+const Menu = ({name, desc, menu, addItem}) => {
     return (
         <section className="features-boxed">
             <div className="container">
@@ -10,7 +10,7 @@ const Menu = ({name, desc, menu}) => {
                 </div>
                 <div className="row justify-content-center features">
                     {menu.map((pizza) => (
-                        <Item item={pizza}/>
+                        <Item key={pizza.id} item={pizza} addItem={addItem}/>
                     ))}
                 </div>
             </div>
