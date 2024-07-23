@@ -9,7 +9,7 @@ const Item = ({item, addItem}) => {
                     <button onClick={() => addItem(item)} className="btn btn-success" type="button">
                         Add to basket
                     </button>
-                    <span className="badge rounded-pill bg-danger price">${item.price}</span>
+                    <span className="badge rounded-pill bg-danger price">₹{item.price}</span>
                 </div>
             </div>
         </div>

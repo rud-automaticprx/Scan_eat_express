@@ -33,7 +33,7 @@ function Cart({items, remove}) {
                                     <tr key={pizza.id}>
                                         <td><strong>{pizza.name}</strong></td>
                                         <td>{pizza.qty}</td>
-                                        <td>${pizza.price}</td>
+                                        <td>₹{pizza.price}</td>
                                         <td id="remove">
                                             <i onClick={() => remove(pizza)} className="far fa-trash-alt"/>
                                         </td>
@@ -49,16 +49,16 @@ function Cart({items, remove}) {
                         <hr/>
                         <div className="d-flex justify-content-between">
                             <p className="lead">Subtotal</p>
-                            <p className="lead">${totalPrice}</p>
+                            <p className="lead">₹{totalPrice}</p>
                         </div>
                         <div className="d-flex justify-content-between">
                             <p>GST</p>
-                            <p>${GST}</p>
+                            <p>₹{GST}</p>
                         </div>
                         <hr/>
                         <button className="btn btn-success d-flex justify-content-between align-items-baseline"
                                 id="checkout" type="button">Checkout<span
-                            className="badge bg-success">${totalPrice + GST}</span>
+                            className="badge bg-success">₹{totalPrice + GST}</span>
                         </button>
                     </div>
                 </div>
